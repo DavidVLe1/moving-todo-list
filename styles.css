@@ -100,6 +100,7 @@
   /* applied when the todo item is checked */
   .checked { 
     text-decoration: line-through;
+    background-color: #1dd2af;
   }
   /* todo-items style ends */
   /* container style ends */
