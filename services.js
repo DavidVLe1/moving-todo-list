@@ -8,12 +8,18 @@ let day =date.getDate();
 let month= date.getMonth()+1;
 let year = date.getFullYear();
 
+const audio= new Audio("resources/buttonClick.ogg");
+
 let todoArray = [];
 
 todoForm.addEventListener('submit', function(event) {
   event.preventDefault();
   addTodo(todoInput.value + " added at "+ `${day}-${month}-${year}`); 
 });
+
+function playAudio(){
+  new Audio("resources/buttonClick.ogg").play();
+}
 
 function addTodo(item) {
   if (item !== '') {
